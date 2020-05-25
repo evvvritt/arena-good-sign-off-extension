@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      background-color: white;
+      /* border-radius: 0.25em; */
+      border: 5px solid rgb(232, 232, 232);
+      width:308px;
+      padding:16px;
+      margin:0;
+      font-size:16px;
+      line-height:1.15;
+    }
+    h1{
+      font-size: 1em;
+      color:#999;
+      margin:0 0 16px;
+      font-weight: normal;
+    }
+    a{color:inherit}
+    p{
+      margin:0;
+      font-size:.8125rem;
+      font-weight: normal;
+      color:#585858;
+      border: 1px solid rgb(238,238,238);
+      padding: 0.65625em 0.75em 0.75em;
+      min-height: 6em;
+      cursor: pointer;
+    }
+    nav{
+      display: flex;
+      margin:16px -8px 0;
+    }
+    button{
+      flex:1;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: bold;
+      line-height: 1;
+      user-select: none;
+      cursor: pointer;
+      text-align: center;
+      margin:0 8px;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 0.65625em;
+      padding-bottom: 0.65625em;
+      color: rgb(88, 88, 88);
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 0.25em;
+      border-color: rgb(222, 222, 222);
+      text-decoration: none !important;
+      background:inherit;
+    }
+    button:focus{
+      outline:0px
+    }
+    .hover-border-dark:hover{
+      color: rgba(0, 0, 0, 0.8);
+      border-color: rgba(0, 0, 0, 0.4);
+    }
+    .color-green{color:#17AC10;}
+    .bold{font-weight:bold}
+    .td-none{text-decoration: none;}
+  </style>
+</head>
+<body>
+  <h1>
+    <a href="https://are.na/meg-miller/good-sign-offs" target="_blank" class="td-none"><span class="bold">Are.na</span> / <span class="bold color-green td-none">Good Sign-Offs</span></a>
+  </h1>
+  <p id="signoff" class="hover-border-dark">...</p>
+  <nav>
+    <button id="latest-btn" class="hover-border-dark">Latest</button>
+    <button id="random-btn" class="hover-border-dark">Random</button>
+  </nav>
+  <script src="popup.js"></script>
+</body>
+</html>
