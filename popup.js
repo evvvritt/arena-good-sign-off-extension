@@ -1,9 +1,9 @@
-'use strict';
+'use strict'
 
-let total, latest;
-const signOff = document.getElementById('signoff');
-const randomBtn = document.getElementById('random-btn');
-const latestBtn = document.getElementById('latest-btn');
+let total, latest
+const signOff = document.getElementById('signoff')
+const randomBtn = document.getElementById('random-btn')
+const latestBtn = document.getElementById('latest-btn')
 
 // update sign off text
 function setSignOff (block) {
