@@ -1,7 +1,6 @@
 'use strict';
 
 let total, latest;
-const apiURL = 'https://api.are.na/v2';
 const signOff = document.getElementById('signoff');
 const randomBtn = document.getElementById('random-btn');
 const latestBtn = document.getElementById('latest-btn');
@@ -30,7 +29,7 @@ function error (msg = 'Oops! Try again :$,') {
 // get block/sign-off
 async function fetchSignOff (page = 1) {
   // page = block number
-  return fetch(apiURL + `/channels/good-sign-offs?per=1&page=${page}`)
+  return fetch(`https://api.are.na/v2/channels/good-sign-offs?per=1&page=${page}`)
     .then(resp => resp.json())
     .then(data => {
       total = data.length // total blocks in channel

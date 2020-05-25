@@ -9,6 +9,7 @@
     "clipboardWrite"
   ],
   "icons": {
+    "24": "images/icon-24.png",
     "128": "images/icon-128.png"
   },
   "manifest_version": 2
